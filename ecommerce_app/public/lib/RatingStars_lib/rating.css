@@ -1,0 +1,15 @@
+.ratingContainer {
+                clear: both;
+            }
+            .ratingContainer > div {
+                background-image: url(images/ratingStars.png);
+                height: 32px;
+                width: 31px;
+                float: left;
+            }
+            .halfStar {
+                background-position: 65px 0px;
+            }
+            .disabledStar {
+                background-position: 29px 2px;
+            }

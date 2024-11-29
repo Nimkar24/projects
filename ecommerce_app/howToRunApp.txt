@@ -1,0 +1,7 @@
+1. To run the project open terminal and run command,
+	D:\Naresh IT\my-project\ecommerce_app>nodemon ./bin/www    ................(this command works for me)
+
+	Note:- PLease open the path of this project in your terminal and give command (nodemon ./bin/www)
+
+2. Open below link in your browser to see project
+	http://localhost:3000/index.html#                ......(this works for me, it can be different for you).

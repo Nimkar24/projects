@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="stylesheets/addNewProduct.css">
+        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="lib/bootstrap-icons/font/bootstrap-icons.min.css">
+        <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="lib/axios.js"></script>
+        <script src="lib/jquery.js"></script>
+        <script src="javascripts/addNewProduct.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <ul class="newProductContainer" >
+                <li>
+                    <label>Product Id </label>
+                    <input type="text" id="id" class="form-control">
+                </li>
+                <li>
+                    <label>Title </label>
+                    <input type="text" id="title" class="form-control">
+                </li>
+                <li>
+                    <label>Price </label>
+                    <input type="number" id="price" class="form-control">
+                </li>
+                <li>
+                    <label>Description </label>
+                    <textarea  id="description" cols="50" rows="5" class="form-control"> </textarea>
+                </li>
+                <li>
+                    <label >Category</label>
+                    <select name="" id="category" class="form-control">
+                        <option value="men's clothing">men's clothing</option>
+                        <option value="jewelery">jewelery</option>
+                        <option value="women's clothing">women's clothing</option>
+                        <option value="electronics">electronics</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="">Product Image</label>
+                    <!-- <input type="text" id="image" class="form-control"> -->
+                     <form method="POST" enctype="multipart/form-data"> 
+                        <input type="file" name="prodImage"> 
+                        <input type="button" value="Upload product Image" onclick="uploadImageToServer()">
+                    </form>
+                </li>
+                <li>
+                    <label for="">Rating</label>
+                    <input type="number" id="rating" class="form-control">
+                </li>
+                <li>
+                    <button class="btn btn-primary" onclick="readProductDetails()">  Add Product</button>
+                    <button type="reset" class="btn btn-success">Reset Values</button>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

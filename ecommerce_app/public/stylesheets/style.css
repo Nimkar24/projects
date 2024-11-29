@@ -1,0 +1,367 @@
+/* body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+} */
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #fff4df;
+}
+
+.solid-line {
+  height: 2px;
+  background-color: #80808073;
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* --------------------------------------------------------------------------Header Part-------------------------------------------------------------------------- */
+.navbar-shadow {
+  box-shadow: 0px 1px 5px 0px gray;
+}
+
+.app-logo {
+  width: 200px;
+  height: 60px;
+}
+
+.search-form {
+  margin-left: 30px;
+}
+
+.search-bar {
+  width: 350px;
+}
+
+/* .btn-search {                       for search button 
+  width: 100px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  background: linear-gradient(45deg, #ffac13, #ffca67) !important;
+  border: none;
+  letter-spacing: 1px;
+}
+
+.btn-search:hover {
+  color: black;
+  transform: translateY(-2px);
+  background: linear-gradient(45deg, #ffca67, #ffac13) !important;
+} */
+
+.btn-search {
+  transition: transform 0.3s ease; /* Smooth transition over 0.3 seconds */
+}
+
+.btn-search:hover {
+  transform: translateX(5px);
+}
+
+.navbar-items {
+  margin-left: 50px;
+}
+
+/* ---------------------------------------------------------------------------Main Part--------------------------------------------------------------------------- */
+
+.image-slider {
+  margin-top: 110px;
+  box-shadow: 0px 0px 5px 2px black;
+  width: 95vw;
+  /* background-color: #ffac13; */
+}
+
+.eight-item-list {
+  margin-top: 25px;
+}
+
+.special-item-1 {
+  padding: 50px;
+}
+
+.special-item-2 {
+  margin-top: -20px;
+  padding: 50px;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 5px 0px black;
+}
+
+.btn-grab {
+  width: 150px;
+  border-radius: 10px !important;
+  color: white;
+  background: linear-gradient(45deg, #ffac13, #ffca67) !important;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.btn-grab:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(45deg, #ffca67, #ffac13) !important;
+  color: black;
+}
+
+.best-deal-text {
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.special-item-3 {
+  margin: 50px;
+}
+
+.toys {
+  width: 90vw;
+  height: 40vh;
+  object-fit: cover;
+
+}
+
+.btn-explore {
+  width: 150px;
+  border-radius: 10px !important;
+  color: white;
+  background: linear-gradient(45deg, #ffac13, #ffca67) !important;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.btn-explore:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(45deg, #ffca67, #ffac13) !important;
+  color: black;
+}
+
+.btn-view-more {
+  width: 150px;
+  border-radius: 10px !important;
+  color: white;
+  font-weight: 500;
+  background: linear-gradient(45deg, #ffac13, #ffca67) !important;
+  border: none;
+  letter-spacing: 1px;
+}
+
+.btn-view-more:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(45deg, #ffca67, #ffac13) !important;
+  color: black;
+}
+
+/* ---------------------------------------------------------------------------Footer Part--------------------------------------------------------------------------- */
+
+footer {
+  background: linear-gradient(45deg, #989898, #767676, #232323);
+}
+
+footer h5 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+footer p {
+  color: #cccccc;
+}
+
+.social-icons a {
+  font-size: 20px;
+}
+
+.footer-email {
+  border-radius: 10px !important;
+}
+
+.btn-primary {
+  border-radius: 0;
+  /* Square corners */
+}
+
+.btn-subscribe {
+  width: 110px;
+  border-radius: 10px !important;
+  color: white;
+  font-weight: 500;
+  background-color: red;
+  border: none;
+  letter-spacing: 1px;
+}
+
+.btn-subscribe:hover {
+  color: red;
+  background-color: white;
+}
+
+.btn-language {
+  background: linear-gradient(45deg, #ffac13, #ffca67) !important;
+  border-radius: 10px;
+}
+
+.btn-language:hover {
+  border: 2px solid white;
+}
+
+.copy-name {
+  background: linear-gradient(45deg, #232323, #767676, #989898);
+}
+
+.copy-name p {
+  color: white;
+}
+
+/* --------------------------------------------------------login popup --------------------------------------------------------*/
+
+.box-area {
+  width: 930px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+/* .form-check-label {
+  padding-left: 10px;
+} */
+
+.google img {
+  height: 20px;
+  width: 70px;
+  margin-left: 7px;
+}
+
+.left-box {
+  width: auto !important;
+}
+
+.right-box {
+  /* margin-top: 20px !important; */
+  width: auto !important;
+}
+
+::placeholder {
+  font-size: 16px;
+}
+
+.popup-last-link small a {
+  margin-left: 5px;
+}
+
+.btn-login {
+  background: linear-gradient(45deg, #ffac13, #ffca67) !important;
+  color: white !important;
+  font-weight: 500 !important;
+}
+
+.btn-login:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(45deg, #ffca67, #ffac13) !important;
+  box-shadow: 0px 0px 3px 1px black;
+}
+
+.google {
+  background: rgb(234, 234, 234) !important;
+}
+
+/* ==========captcha========= */
+.captcha-container {
+  margin: 5px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+#captchaCanvas {
+  background: linear-gradient(45deg, #ffca67, #ffac13) !important;
+  width: 120px;
+  border-radius: 5px;
+}
+
+#captchaInput {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+/* -----------------------------------------------------sign up popup----------------------------------------------------- */
+
+.box-area {
+  width: 930px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.left-box {
+  width: auto !important;
+}
+
+.right-box {
+  /* margin-top: 20px !important; */
+  width: auto !important;
+}
+
+.featured-image {
+  margin-top: 50px;
+}
+
+.btn-submit {
+  background: linear-gradient(45deg, #ffac13, #ffca67) !important;
+  color: white !important;
+  font-weight: 500 !important;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(45deg, #ffca67, #ffac13) !important;
+  box-shadow: 0px 0px 3px 1px black;
+}
+
+.note {
+  display: inline-block;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.note:hover {
+  transform: scale(1.3); /* Increases the size to 110% on hover */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+  border: 2px solid #ffac13 !important;
+  background: black;
+}
+
+.note:hover * {
+  color: white !important; /* Ensures all child elements of .note are red */
+}
+
+.note:hover div:first-child {
+  color: #ffac13 !important; /* Keeps the "Note" text in yellowish color */
+}
+
+
+/* --------------------------------------------------forgot password popup-------------------------------------------------- */
+
+.box-area {
+  width: 930px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.btn-done {
+  background: linear-gradient(45deg, #ffac13, #ffca67) !important;
+  color: white !important;
+  font-weight: 500 !important;
+}
+
+.btn-done:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(45deg, #ffca67, #ffac13) !important;
+  box-shadow: 0px 0px 3px 1px black;
+}

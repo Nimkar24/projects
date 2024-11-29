@@ -1,0 +1,27 @@
+<div class="fluid-container productHtmContainer">
+    <div class="row">
+        <div class="col-md-2">
+            <b>Filters</b>
+            <div class="container" id="categoryList">
+                <div>
+                    <input type="checkbox" value="electronics"> Electronics
+                </div>
+                <div>
+                    <input type="checkbox" value="men's clothing"> Men's Clothing
+                </div>
+                <div>
+                    <input type="checkbox" value="jewelery"> Jewelery
+                </div>
+                <div>
+                    <input type="checkbox" value="women's clothing"> Women's Clothing
+                </div>
+            </div>
+            <div>
+                PriceRange
+                <input type="range" min="0" max="1000000" class="form-control" step="500" id="priceFilter">
+            </div>
+            <button class="btn btn-primary" onclick="getProductDetailsWithFilter()">Apply Filters</button>
+        </div>
+        <div class="col-md-10 pDetailsBlock"></div>
+    </div>
+</div>

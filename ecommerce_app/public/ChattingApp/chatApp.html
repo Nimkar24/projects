@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="chatapp.css">
+        <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.js"></script>
+        <script src="chatApp.js"></script>
+    </head>
+    <body>
+        <div class="chatContainer">
+            <div class="msgContainer"></div>
+            <div class="btnControls d-flex" >
+                <div>
+                    <input type="text" class="form-control" id="userMsg">
+                </div>
+                <div style="margin-left: 10px;">
+                    <input type="button" class="form-control btn btn-primary btn-lg" value="Send" onclick="sendMsg()">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

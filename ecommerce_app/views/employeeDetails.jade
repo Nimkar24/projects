@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  each details in empDetails
+    ul
+        li Name : #{details.name}
+        li Age: #{details.age}
+        li Gender: #{details.gender}
+        li Location: #{details.location}
+        li
+            img(src="#{details.profilePic}")
