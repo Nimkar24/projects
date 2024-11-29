@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-20</title>
+    <link rel="icon" href="a_logo.png">
+    <link rel="stylesheet" href="std_admission_form_using_Class.css">
+    <script src="jquery.js"></script>
+    <script src="handleBar.js"></script>
+</head>
+
+<body>
+
+    <!---------------------------------------------This data will load 1st -------------------------------------------------->
+
+    <h1>Student Admission Form Using Class</h1>
+
+    <img src="collage.png" id="collage" style="height: 300px; width: 300px;">
+
+    <div id="btnEnter"> <input type="button" value="ENTER" id="btnE" onclick="enter();"> </div>
+
+    <!---------------------------------------------This data will load 2nd -------------------------------------------------->
+
+    <h2 id="heading2">Enter Student Data</h2>
+
+    <div class="container">
+
+        <ul id="readList">
+            <li class="liHover">
+                <input type="text" id="sname" placeholder="Employee Name" maxlength="30"
+                    onkeypress="return validateName(event)">
+            </li>
+
+            <li class="liHover">
+                <input type="number" id="sage" placeholder="Enter Age (3 years to 100 years)" min="3" max="100"
+                    onchange="return validateNumber()">
+                <!--(onchange) is use when user looses his focus and input wrong thing, so alert box invoke-->
+            </li>
+
+            <li>
+                Male <input type="radio" value="Male" name="gender" checked>
+                Female <input type="radio" value="Female" name="gender">
+            </li>
+
+            <li class="liHover">
+                <select name="studentfees" id="stotalfees">
+                    <option value="">Select Fees</option>
+                    <option value="10000">10000</option>
+                    <option value="30000">30000</option>
+                    <option value="60000">60000</option>
+                    <option value="100000">100000</option>
+                </select>
+            </li>
+
+            <li class="liHover">
+                <input type="number" id="sub1" placeholder="1st Subject Marks out of 100" min="0" max="100"
+                    oninput="return validateNumber()">
+            </li>
+
+            <li class="liHover">
+                <input type="number" id="sub2" placeholder="2nd Subject Marks out of 100" min="0" max="100"
+                    oninput="return validateNumber()">
+            </li>
+
+            <li class="liHover">
+                <input type="number" id="sub3" placeholder="3rd Subject Marks out of 100" min="0" max="100"
+                    oninput="return validateNumber()">
+            </li>
+        </ul>
+
+        <div id="btnLoad"> <input type="button" value="LOAD  ADMISSION  FORM" id="btnL" onclick="loadAdmissionForm();">
+        </div>
+
+    </div>
+
+    <!----------------------------------This data will load 3rd---------------------------------------------------------------->
+    <!------------------------Common template for displaying data of all students------------------------------>
+
+    <h2 id="heading3">Final Admission Form</h2>
+
+    <div class="container2"> <!--visibility (HIDE)-->
+        <ul>
+            <li>Admission Form of : <span id="dname"></span></li>
+            <li> <img src="" alt=""> </li>
+            <li>Age : <span id="dage"></span> </li>
+            <li>Gender : <span id="dgender"></span> </li>
+            <li>Total Fees : <span id="dtotalfees"></span> </li>
+            <li>Total Marks : <span id="dtotalmarks"></span> </li>
+            <li>Percentage : <span id="dpercentage"></span> </li>
+            <li>Discount on fees : <span id="discountonfees"></span> </li>
+            <li>Fees to be Paid : <span id="feestobepaid"></span> </li>
+        </ul>
+    </div>
+
+    <div class="tbl">
+        <table id="tableData">
+            <thead>
+                <tr>
+                    <th>Percentage (%)</th>
+                    <th>Discount on Fees for Male (Off %)</th>
+                    <th>Discount on Fees for Female (Off %)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>98% - 100%</td>
+                    <td>100%</td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <td>86% - 97%</td>
+                    <td>50%</td>
+                    <td>60%</td>
+                </tr>
+                <tr>
+                    <td>71% - 85%</td>
+                    <td>30%</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>55% - 70%</td>
+                    <td>10%</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>Below 55%</td>
+                    <td>0%</td>
+                    <td>0%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="btn-container">
+        <div id="btnResetData"> <input type="button" value="RESET  DATA" id="btnRD" onclick="resetData();"> </div>
+
+        <div id="btnSummary"> <input type="button" value="SUMMARY" id="btnS" onclick="summary();"> </div>
+    </div>
+
+
+    <!----------------------------------This data will load 4th---------------------------------------------------------------->
+    <!------------------------Common template for storing data of all students inside the ul list------------------------------>
+
+    <h2 id="heading4">Past Admission Record</h2>
+
+    <ul id="admissionForm"></ul> <!-- Template data will show here-->
+
+    <div id="admission-form-template" style="display: none;">
+        <li>
+            <ul class="sDetail">
+
+                <div class="merge">
+                    <div id="childMerge-1">
+                        <img src="{{hBimage}}" alt="Image of {{hBname}}">
+                    </div>
+
+                    <div id="childMerge-2">
+                        <li>Name : <span> {{hBname}} </span> </li>
+
+                        <li>Age : <span> {{hBage}} </span> </li>
+
+                        <li>Gender : <span> {{hBgender}} </span> </li>
+
+                        <li>Total Fees : <span> {{hBtotalfees}} </span> </li>
+
+                        <li>Total Marks : <span> {{hBtotalmarks}} </span> </li>
+
+                        <li> Percentage : <span> {{hBpercentage}} </span> </li>
+
+                        <li> Discount on Fees : <span> {{hBdiscountonfees}} </span> </li>
+
+                        <li> Fees to be Paid : <span> {{hBfeespaid}} </span> </li>
+
+                    </div>
+                </div>
+            </ul>
+        </li>
+    </div>
+
+    <div class="btn-container-2">
+        <div id="btnAddition"> <input type="button" id="btnA" value="Add More Data" onclick="addition();"> </div>
+        <div id="btnClear"> <input type="button" id="btnC" value="Clear All Data" onclick="clearData();"> </div>
+    </div>
+
+
+    <!------------------------------------- reason to add js here is:- Waiting for DOM structure to load completely -------------------------------------------->
+
+    <script src="std_admission_form_using_Class.js"></script>
+
+</body>
+
+</html>

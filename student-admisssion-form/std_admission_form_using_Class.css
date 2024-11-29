@@ -1,0 +1,434 @@
+.container,
+.container2,
+#btnLoad input,
+#btnResetData input,
+#btnSummary input,
+#btnAddition input,
+#btnClear input,
+#progress-card-template,
+#admissionForm,
+h2,
+.tbl,
+.btn-container,
+.btn-container-2 {
+    display: none;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+table {
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.container2 ul li img,
+.sDetail li img {
+    border-radius: 100%;
+    width: 220px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* ------------------------------------------------------1st------------------------------------------------------------------------- */
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(255 244 248);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(222, 16, 99);
+    /* text-decoration: underline; */
+    font-size: 45px;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 1.5px;
+}
+
+#collage {
+    display: block;
+    margin: 100px auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 2px rgb(222 16 99);
+}
+
+#collage:hover {
+    transform: translateY(-5px) scale(1.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#btnEnter {
+    text-align: center;
+}
+
+#btnEnter input {
+    /* background-color: rgb(222, 16, 99); */
+    background: linear-gradient(45deg, rgb(222, 16, 99), rgb(255, 123, 176));
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    margin-top: 50px;
+    font-size: 26px;
+    cursor: pointer;
+    letter-spacing: 5.5px;
+    box-shadow: 0px 2px 3px 0px black;
+}
+
+#btnEnter input:hover {
+    background: linear-gradient(45deg, rgb(255, 123, 176), rgb(222, 16, 99));
+    box-shadow: 0px 0px 5px 1px black;
+    transform: translateY(-3px);
+}
+
+/* ------------------------------------------------------------------2nd------------------------------------------------------------- */
+
+#heading2 {
+    text-align: center;
+    color: rgb(222, 16, 99);
+    font-size: 45px;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 1.5px;
+}
+
+.container {
+    width: 650px;
+    margin: 50px auto;
+    /* border: 2px solid; */
+    background-color: rgb(255 234 242);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 2px rgb(222 16 99);
+}
+
+#readList {
+    padding: 0px;
+    list-style: none;
+}
+
+#readList li {
+    margin: 20px;
+    font-size: 20px;
+}
+
+#readList .liHover:hover {
+    box-shadow: 0px 0px 5px 1px rgb(222 16 99);
+    border-radius: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid rgb(222 16 99);
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+#readList li input[type="radio"] {
+    margin-left: 5px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    /* Removes default radio button */
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(222, 16, 99);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+input[type="radio"]:checked {
+    background-color: rgb(255, 133, 182);
+    border-color: rgb(222, 16, 99);
+}
+
+input[type="radio"]:hover {
+    border-color: black;
+}
+
+/* select {
+   color: black;
+} */
+
+select option {
+    /* background-color: rgb(255, 244, 248);  */
+    color: rgb(222 16 99);
+}
+
+#btnLoad {
+    text-align: center;
+}
+
+#btnLoad input {
+    /* background-color: rgb(222, 16, 99); */
+    background: linear-gradient(45deg, rgb(222, 16, 99), rgb(255, 123, 176));
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    box-shadow: 0px 2px 3px 0px black;
+}
+
+#btnLoad input:hover {
+    background: linear-gradient(45deg, rgb(255, 123, 176), rgb(222, 16, 99));
+    box-shadow: 0px 0px 5px 1px black;
+    transform: translateY(-3px);
+}
+
+/* ---------------------------------------------------------------------3rd---------------------------------------------------------- */
+
+#heading3 {
+    text-align: center;
+    color: rgb(222, 16, 99);
+    font-size: 45px;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 0px;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    /*console*/
+    top: 0;
+    left: 50%;
+    /* Move the left edge to the center */
+    transform: translateX(-50%);
+    /* Shift the element back by half its width to center it */
+    z-index: 1000;
+    /* Ensure it stays on top of other elements if needed*/
+    background-color: rgb(255 244 248);
+    letter-spacing: 1.5px;
+}
+
+.container2 {
+    width: 550px;
+    margin: 0px auto;
+    margin-top: 100px;
+    background-color: rgb(255 234 242);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 2px rgb(222 16 99);
+    box-sizing: border-box;
+}
+
+.container2 ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.container2 ul li {
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container2 ul li span {
+    color: rgb(222, 16, 99);
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.container2 ul li:hover span {
+    color: rgb(255, 123, 176);
+}
+
+.container2 ul li img:hover {
+    transform: scale(1.05);
+}
+
+.tbl {
+    width: 800px;
+    margin: 0px auto;
+    margin-top: 60px;
+    /* border: 2px solid rgb(222, 16, 99); */
+}
+
+.tbl #tableData {
+    width: 100%;
+    border-spacing: 5px;
+    /* border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px; */
+}
+
+#tableData th,
+#tableData td {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+#tableData th {
+    background-color: rgb(222, 16, 99);
+    /* Modern green */
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+#tableData tbody tr:hover {
+    background-color: rgb(255 234 242);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+#btnResetData input,
+#btnSummary input {
+    /* background-color: rgb(222, 16, 99); */
+    background: linear-gradient(45deg, rgb(222, 16, 99), rgb(255, 123, 176));
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    box-shadow: 0px 2px 3px 0px black;
+}
+
+#btnResetData input:hover,
+#btnSummary input:hover {
+    background: linear-gradient(45deg, rgb(255, 123, 176), rgb(222, 16, 99));
+    box-shadow: 0px 0px 5px 1px black;
+    transform: translateY(-3px);
+}
+
+/* --------------------------------------------------------------4th--------------------------------------------------------------- */
+
+#heading4 {
+    text-align: center;
+    color: rgb(222, 16, 99);
+    font-size: 45px;
+    text-shadow: 1px 1px 1px black;
+    margin-top: -50px;
+    letter-spacing: 1.5px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+
+#admissionForm {
+    /* border: 2px solid black; */
+    list-style: none;
+    padding: 0px;
+    margin-top: 5px;
+}
+
+.sDetail {
+    padding: 0px;
+    margin: 72px;
+    list-style: none;
+}
+
+.merge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    box-shadow: 0px 0px 5px 1px rgb(222, 16, 99);
+    background-color: rgb(255 234 242);
+    width: 1000px;
+    border-radius: 30px;
+    margin: 0px auto;
+}
+
+#childMerge-1 img {
+    border-radius: 100%;
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+#childMerge-1 img:hover {
+    transform: scale(1.05);
+}
+
+#childMerge-2 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+#childMerge-2 li {
+    padding: 5px;
+    font-weight: bold;
+}
+
+#childMerge-2 li span {
+    color: rgb(222, 16, 99);
+    font-weight: bold;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+}
+
+#childMerge-2 li:hover span {
+    color: rgb(255, 123, 176);
+}
+
+.btn-container-2 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+#btnAddition input,
+#btnClear input {
+    /* background-color: rgb(222, 16, 99); */
+    background: linear-gradient(45deg, rgb(222, 16, 99), rgb(255, 123, 176));
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    box-shadow: 0px 2px 3px 0px black;
+}
+
+#btnAddition input:hover,
+#btnClear input:hover {
+    background: linear-gradient(45deg, rgb(255, 123, 176), rgb(222, 16, 99));
+    box-shadow: 0px 0px 5px 1px black;
+    transform: translateY(-3px);
+}
+
+.btn-container-2 {
+    margin-bottom: 0px;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    /* top: 0; */
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    /* background-color: rgb(95, 129, 66); */
+}
